@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/projectstyle.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
+    <title>Projects | Portfolio Keb's D Grason</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+    <a href="/" class="logo"><i class=""></i> Keb's D Grason</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="index.html">Skills</a></li>
+            <li><a href="/#education">Education</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- navbar ends -->
+
+<!-- work project section starts -->
+<section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+    <div id="filters" class="button-group">
+        <button class="btn is-checked" data-filter="*">All Projects</button>
+        <button class="btn" data-filter=".AI">AI & ML & DS</button>
+        <button class="btn" data-filter=".web">Basic Web</button>
+        <button class="btn" data-filter=".iot">IOT</button>
+        <button class="btn" data-filter=".android">Android App</button>
+    </div>
+    <div class="box-container"></div>
+    <div class="backbtn">
+        <a href="/#work" class="btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Home</span>
+        </a>
+    </div>
+</section>
+<!-- work project section ends -->
+
+<a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- ==== JAVASCRIPT CDNS START ==== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<!-- ==== JAVASCRIPT CDNS END ==== -->
+
+<script>
+$(document).ready(function () {
+    $('#menu').click(function () {
+        $(this).toggleClass('fa-times');
+        $('.navbar').toggleClass('nav-toggle');
+    });
+
+    $(window).on('scroll load', function () {
+        $('#menu').removeClass('fa-times');
+        $('.navbar').removeClass('nav-toggle');
+
+        if (window.scrollY > 60) {
+            document.querySelector('#scroll-top').classList.add('active');
+        } else {
+            document.querySelector('#scroll-top').classList.remove('active');
+        }
+    });
+});
+
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === "visible") {
+        document.title = "Projects | Portfolio Keba Daniel J";
+        $("#favicon").attr("href", "/assets/images/favicon.png");
+    } else {
+        document.title = "Portfolio Keba Daniel J";
+        $("#favicon").attr("href", "/assets/images/favicon.png");
+    }
+});
+
+const projects = [
+  {
+    "name": "PC Recommendation System",
+    "desc": "A machine learning model to recommend PC configurations using decision tree algorithm. Built using Python and Scikit-learn.",
+    "image": "pc_recommendation",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/pc-recommendation-system",
+      "code": "https://github.com/Kebadan-2704/pc-recommendation-system"
+    }
+  },
+  {
+    "name": "SensaStim Wearable",
+    "desc": "An IoT-based wearable device to stimulate nerves using TENS for diabetic neuropathy and Parkinson’s. Uses sensors and health analytics.",
+    "image": "sensastim_wearable",
+    "category": "iot",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/sensastim",
+      "code": "https://github.com/Kebadan-2704/sensastim"
+    }
+  },
+  {
+    "name": "Food Delivery Verification System",
+    "desc": "An IoT system using QR codes and live camera feed to reduce delays during police checks for food deliveries. Ensures box transparency.",
+    "image": "food_delivery",
+    "category": "iot",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/iot-food-delivery-verification",
+      "code": "https://github.com/Kebadan-2704/iot-food-delivery-verification"
+    }
+  },
+  {
+    "name": "NotyStack Android",
+    "desc": "Fully fledged Android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
+    "image": "notystackandroid",
+    "category": "android",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/Kebadan-2704/notystack-android"
+    }
+  },
+  {
+    "name": "Core Mate Android App",
+    "desc": "A personal assistant Android app for students and musicians, featuring health tracking, habit builder, document vault, task planner, and biometric security.",
+    "image": "coremate",
+    "category": "android",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/coremate-android",
+      "code": "https://github.com/Kebadan-2704/coremate-android"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal portfolio to showcase skills, education, and projects. Built with HTML, CSS, JavaScript, and hosted on GitHub Pages.",
+    "image": "portfolio",
+    "category": "web",
+    "links": {
+      "view": "https://Kebadan-2704.github.io",
+      "code": "https://github.com/Kebadan-2704/portfolio"
+    }
+  },
+  {
+    "name": "UmaExports-style Website",
+    "desc": "Agricultural or commodity trading showcase site inspired by umaexports.net. Built with modern responsive UI design.",
+    "image": "clone",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/umaexports-clone",
+      "code": "https://github.com/Kebadan-2704/umaexports-clone"
+    }
+  },
+  {
+    "name": "Voice Bot – Proton",
+    "desc": "A smart voice assistant powered by LLaMA model that handles queries using NLP and responds with speech and text. Built for SDG-driven applications.",
+    "image": "bot",
+    "category": "AI",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/voice-bot-proton",
+      "code": "https://github.com/Kebadan-2704/voice-bot-proton"
+    }
+  },
+  {
+    "name": "Space Habitat Monitoring System",
+    "desc": "GenAI-powered assistant for astronauts to monitor health, food, material safety, and generate alerts. Built with Flask and GenAI API.",
+    "image": "space_habitat",
+    "category": "AI",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/space-habitat-monitoring",
+      "code": "https://github.com/Kebadan-2704/space-habitat-monitoring"
+    }
+  },
+    {
+    "name": "Skill Radar",
+    "desc": "A real-time course recommendation system using ML based on NEP 2020. Built using Python, Pandas, Scikit-learn, and Streamlit.",
+    "image": "skillradar",
+    "category": "AI",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/skill-radar",
+      "code": "https://github.com/Kebadan-2704/skill-radar"
+    }
+  },
+ 
+];
+
+function showProjects(projects) {
+    let container = document.querySelector(".work .box-container");
+    let html = "";
+    projects.forEach(project => {
+        html += `
+        <div class="grid-item ${project.category}">
+            <div class="box tilt" style="width: 380px; margin: 1rem">
+                <img draggable="false" src="/assets/images/projects/${project.image}.jpg" alt="${project.name}" />
+                <div class="content">
+                    <div class="tag"><h3>${project.name}</h3></div>
+                    <div class="desc">
+                        <p>${project.desc}</p>
+                        <div class="btns">
+                            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
+    });
+    container.innerHTML = html;
+
+    var $grid = $('.box-container').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
+
+    $('.button-group').on('click', 'button', function () {
+        $('.button-group').find('.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2
+    });
+}
+
+showProjects(projects);
+
+document.onkeydown = function (e) {
+    if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (
+        e.keyCode == 'I'.charCodeAt(0) ||
+        e.keyCode == 'C'.charCodeAt(0) ||
+        e.keyCode == 'J'.charCodeAt(0))) ||
+        (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))) {
+        return false;
+    }
+};
+</script>
+
+</body>
+</html>

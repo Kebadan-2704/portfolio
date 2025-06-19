@@ -1,0 +1,103 @@
+ [
+  {
+    "name": "PC Recommendation System",
+    "desc": "A machine learning model to recommend PC configurations using decision tree algorithm. Built using Python and Scikit-learn.",
+    "image": "pc_recommendation.jpg",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/pc-recommendation-system",
+      "code": "https://github.com/Kebadan-2704/pc-recommendation-system"
+    }
+  },
+  {
+    "name": "SensaStim Wearable",
+    "desc": "An IoT-based wearable device to stimulate nerves using TENS for diabetic neuropathy and Parkinson’s. Uses sensors and health analytics.",
+    "image": "sensastim_wearable.jpg",
+    "category": "iot",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/sensastim",
+      "code": "https://github.com/Kebadan-2704/sensastim"
+    }
+  },
+  {
+    "name": "Food Delivery Verification System",
+    "desc": "An IoT system using QR codes and live camera feed to reduce delays during police checks for food deliveries. Ensures box transparency.",
+    "image": "food_delivery.jpg",
+    "category": "iot",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/iot-food-delivery-verification",
+      "code": "https://github.com/Kebadan-2704/iot-food-delivery-verification"
+    }
+  },
+  {
+    "name": "NotyStack Android",
+    "desc": "Fully fledged Android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
+    "image": "notystackandroid.jpg",
+    "category": "android",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/Kebadan-2704/notystack-android"
+    }
+  },
+  {
+    "name": "Core Mate Android App",
+    "desc": "A personal assistant Android app for students and musicians, featuring health tracking, habit builder, document vault, task planner, and biometric security.",
+    "image": "coremate.jpg",
+    "category": "android",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/coremate-android",
+      "code": "https://github.com/Kebadan-2704/coremate-android"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal portfolio to showcase skills, education, and projects. Built with HTML, CSS, JavaScript, and hosted on GitHub Pages.",
+    "image": "portfolio.jpg",
+    "category": "web",
+    "links": {
+      "view": "https://Kebadan-2704.github.io",
+      "code": "https://github.com/Kebadan-2704/portfolio"
+    }
+  },
+  {
+    "name": "UmaExports-style Website",
+    "desc": "Agricultural or commodity trading showcase site inspired by umaexports.net. Built with modern responsive UI design.",
+    "image": "clone.jpg",
+    "category": "web",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/umaexports-clone",
+      "code": "https://github.com/Kebadan-2704/umaexports-clone"
+    }
+  },
+  {
+    "name": "Voice Bot – Proton",
+    "desc": "A smart voice assistant powered by LLaMA model that handles queries using NLP and responds with speech and text. Built for SDG-driven applications.",
+    "image": "bot.jpg",
+    "category": "AI",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/voice-bot-proton",
+      "code": "https://github.com/Kebadan-2704/voice-bot-proton"
+    }
+  },
+  {
+    "name": "Space Habitat Monitoring System",
+    "desc": "GenAI-powered assistant for astronauts to monitor health, food, material safety, and generate alerts. Built with Flask and GenAI API.",
+    "image": "space_habitat.jpg",
+    "category": "AI",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/space-habitat-monitoring",
+      "code": "https://github.com/Kebadan-2704/space-habitat-monitoring"
+    }
+  },
+    {
+    "name": "Skill Radar",
+    "desc": "A real-time course recommendation system using ML based on NEP 2020. Built using Python, Pandas, Scikit-learn, and Streamlit.",
+    "image": "skillradar.jpg",
+    "category": "AI",
+    "links": {
+      "view": "https://github.com/Kebadan-2704/skill-radar",
+      "code": "https://github.com/Kebadan-2704/skill-radar"
+    }
+  }
+ 
+]
